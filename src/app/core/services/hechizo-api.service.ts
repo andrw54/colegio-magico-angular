@@ -24,7 +24,7 @@ export class HechizoApiService {
   // ⚠️ El backend responde TEXTO ("Hechizo creado correctamente"), no JSON.
   // PISTA: mira cómo lo resuelve MagoApiService.crear() con responseType.
   crear(hechizo: Hechizo): Observable<string> {
-    return this.http.post(this.apiUrl, hechizo, { responseType: 'text' });
+    return this.http.post(this.apiUrl, hechizo, { responseType: 'text'});
   }
 }
 
